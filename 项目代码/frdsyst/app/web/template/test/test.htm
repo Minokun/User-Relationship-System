@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>数据测试</title>
+<style type="text/css"> 
+	* {
+		margin:0;
+		padding:0;
+	}
+	body {
+		background-color:lavender;
+		}
+	h1 {
+		margin-top:5px;
+		text-align:center;
+	} 
+	a { 
+		text-decoration:none;
+		margin:0 5px; 
+		}
+	.navigation {
+		height:650px;
+		weight:20%;
+		border:1px solid black;
+		float:left;
+	}
+	.content {
+		height:650px;
+		border:1px solid black;
+		float:left;
+		position：relative;
+	}
+	.data {	
+		height:615px;
+	}
+	.controller {
+		text-align:center;
+		font-size:12px;
+		clear:both;
+	}
+	table {
+		border:solid #33CCFF;
+		border-width:1px 0px 0px 1px;
+		height:598px;
+		width:100%;
+		text-align:center;
+		font-size:12px;'
+	}
+	tr {
+		height:38px;
+	}
+	td {
+		border:solid #33CCFF; border-width:0px 1px 1px 0px;
+	}
+	.single {
+		background-color:#CCCCFF;
+	}
+	.multiple {
+		background-color:#EEFFBB;
+	}
+	.time {width:15%;}	.user_agent {width:43%;}	.terminal{width:7%}	.platform{width:10%}	.device_model{width:15%}	.user_browser{width:10%}
+	
+</style>
+<script type="text/javascript">
+	function mouseOver(o) {
+		o.style.backgroundColor = "#DDDDDD";
+	}
+	function mouseOut(o) {
+		if((o.id%2)==1){
+			o.style.backgroundColor = "#CCCCFF";
+		}else{
+			o.style.backgroundColor = "#EEFFBB";		
+		}
+	}
+</script>
+</head>
+<body>
+	<div class='header'><!--{layout:test/header}--></div>
+	<div style="border-bottom:1px solid black;height:50px;margin-top:-40px"></div>
+		<div class="navigation"><!--{layout:test/navigation}--></div>
+		<div class="content">
+			<div class='data'>
+				<table>
+					<tr class='multiple' id="0" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'>时间</td><td class='user_agent'>日志源数据</td><td class='terminal'>终端</td><td class='platform'>系统平台</td><td class='device_model'>手机型号</td><td class='browser'>浏览器型号</td>
+					</tr>
+					<tr class='single' id="1" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time0}--></td><td class='user_agent'><!--{$user_agent0}--></td><td class='terminal'><!--{$terminal0}--></td><td class='platform'><!--{$platform0}--></td><td class='device_model'><!--{$device_model0}--></td><td class='browser'><!--{$browser0}--></td>
+					</tr>
+					<tr class='multiple' id="2" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time1}--></td><td class='user_agent'><!--{$user_agent1}--></td><td class='terminal'><!--{$terminal1}--></td><td class='platform'><!--{$platform1}--></td><td class='device_model'><!--{$device_model1}--></td><td class='browser'><!--{$browser1}--></td>
+					</tr>
+					<tr class='single' id="3" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time2}--></td><td class='user_agent'><!--{$user_agent2}--></td><td class='terminal'><!--{$terminal2}--></td><td class='platform'><!--{$platform2}--></td><td class='device_model'><!--{$device_model2}--></td><td class='browser'><!--{$browser2}--></td>
+					</tr>
+					<tr class='multiple' id="4" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time3}--></td><td class='user_agent'><!--{$user_agent3}--></td><td class='terminal'><!--{$terminal3}--></td><td class='platform'><!--{$platform3}--></td><td class='device_model'><!--{$device_model3}--></td><td class='browser'><!--{$browser3}--></td>
+					</tr>
+					<tr class='single' id="5" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time4}--></td><td class='user_agent'><!--{$user_agent4}--></td><td class='terminal'><!--{$terminal4}--></td><td class='platform'><!--{$platform4}--></td><td class='device_model'><!--{$device_model4}--></td><td class='browser'><!--{$browser4}--></td>
+					</tr>
+					<tr class='multiple' id="6" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time5}--></td><td class='user_agent'><!--{$user_agent5}--></td><td class='terminal'><!--{$terminal5}--></td><td class='platform'><!--{$platform5}--></td><td class='device_model'><!--{$device_model5}--></td><td class='browser'><!--{$browser5}--></td>
+					</tr>
+					<tr class='single' id="7" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time6}--></td><td class='user_agent'><!--{$user_agent6}--></td><td class='terminal'><!--{$terminal6}--></td><td class='platform'><!--{$platform6}--></td><td class='device_model'><!--{$device_model6}--></td><td class='browser'><!--{$browser6}--></td>
+					</tr>
+					<tr class='multiple' id="8" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time7}--></td><td class='user_agent'><!--{$user_agent7}--></td><td class='terminal'><!--{$terminal7}--></td><td class='platform'><!--{$platform7}--></td><td class='device_model'><!--{$device_model7}--></td><td class='browser'><!--{$browser7}--></td>
+					</tr>
+					<tr class='single' id="9" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time8}--></td><td class='user_agent'><!--{$user_agent8}--></td><td class='terminal'><!--{$terminal8}--></td><td class='platform'><!--{$platform8}--></td><td class='device_model'><!--{$device_model8}--></td><td class='browser'><!--{$browser8}--></td>
+					</tr>
+					<tr class='multiple' id="10" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time9}--></td><td class='user_agent'><!--{$user_agent9}--></td><td class='terminal'><!--{$terminal9}--></td><td class='platform'><!--{$platform9}--></td><td class='device_model'><!--{$device_model9}--></td><td class='browser'><!--{$browser9}--></td>
+					</tr>
+					<tr class='single' id="11" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time10}--></td><td class='user_agent'><!--{$user_agent10}--></td><td class='terminal'><!--{$terminal10}--></td><td class='platform'><!--{$platform10}--></td><td class='device_model'><!--{$device_model10}--></td><td class='browser'><!--{$browser10}--></td>
+					</tr>
+					<tr class='multiple' id="12" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time11}--></td><td class='user_agent'><!--{$user_agent11}--></td><td class='terminal'><!--{$terminal11}--></td><td class='platform'><!--{$platform11}--></td><td class='device_model'><!--{$device_model11}--></td><td class='browser'><!--{$browser11}--></td>
+					</tr>
+					<tr class='single' id="13" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time12}--></td><td class='user_agent'><!--{$user_agent12}--></td><td class='terminal'><!--{$terminal12}--></td><td class='platform'><!--{$platform12}--></td><td class='device_model'><!--{$device_model12}--></td><td class='browser'><!--{$browser12}--></td>
+					</tr>
+					<tr class='multiple' id="14" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+						<td class='time'><!--{$time13}--></td><td class='user_agent'><!--{$user_agent13}--></td><td class='terminal'><!--{$terminal13}--></td><td class='platform'><!--{$platform13}--></td><td class='device_model'><!--{$device_model13}--></td><td class='browser'><!--{$browser13}--></td>
+					</tr>
+				</table>
+			</div>
+			<div class='controller'>
+				<a href="javascript:;" onclick="">首页</a><a href="javascript:;" onclick="">上一页</a><a href="javascript:;" onclick="">下一页</a><a href="javascript:;" onclick="">尾页</a><p>第<span id="CPN">1</span>页/共<!--{$TotalPageNum}-->页</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

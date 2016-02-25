@@ -1,0 +1,1 @@
+2016-01-25 10:30:02 [ERROR] : [2016-01-25 10:30:02]msg:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3 LIMIT 1' at line 1;file:G:\WebStation\frdsyst\initphp\initphp.php;line:609;code:throw new exceptionInit($msg, $code);

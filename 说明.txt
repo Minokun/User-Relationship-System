@@ -1,0 +1,7 @@
+1、在mysql里新建一个数据库frdsyst
+2、执行sql文件（数据库执行文件夹里）
+3、将项目代码frdsyst放在网站的根目录下
+4、打开项目代码 frdsyst => app => conf => app.conf.php
+	更改： 
+		①基础配置：$InitPHP_conf ['url'] = '' 引号里改为网站ip
+		②DAO数据库配置，改变default这一类的 数据库配置为自己mysql上的
